@@ -1,12 +1,58 @@
-# React + Vite
+# 🚀 PWA com Notificações Push
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicativo construído com **React + Vite + TailwindCSS** com suporte completo a:
 
-Currently, two official plugins are available:
+- ✅ **PWA standalone**
+- ✅ **Cache offline**
+- ✅ **Notificações push em tempo real via OneSignal**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [x] Vite + React
+- [x] Tailwind CSS
+- [x] [vite-plugin-pwa](https://vite-plugin-pwa.netlify.app/)
+- [x] [OneSignal Push Notifications](https://onesignal.com/)
+- [x] Service Worker + Manifest.json
+
+---
+
+## ▶️ Rodando Localmente
+
+```bash
+git clone https://github.com/WallanDavid/meu-pwa.git
+cd meu-pwa
+npm install
+npm run dev
+```
+
+---
+
+## 🔨 Build para Produção
+
+```bash
+npm run build
+npx serve dist
+```
+
+---
+
+## 🔔 Push Notifications
+
+A permissão é solicitada no carregamento da aplicação.
+
+- Integração realizada com o pacote [`react-onesignal`](https://www.npmjs.com/package/react-onesignal)
+- Notificações enviadas via painel do [OneSignal](https://onesignal.com/)
+
+---
+
+## 📦 Deploy
+
+**Recomendado:** [Vercel](https://vercel.com)
+
+---
+
+## 👨‍💻 Autor
+
+Feito com 💙 por [Wallan Peixoto](https://github.com/WallanDavid)
